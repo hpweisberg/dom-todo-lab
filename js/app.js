@@ -17,6 +17,14 @@ btn.addEventListener('click', function(evt){
   }
 })
 
+// Press Enter to click button
+inputBox.addEventListener('keypress', function(evt){
+  if (evt.key === 'Enter'){
+    evt.preventDefault();
+    document.getElementById('btn').click();
+  }
+})
+
 // Add Reset button:
 resetBtn.addEventListener('click', function(){
   [...myTodoList.children].forEach(c => c.remove())

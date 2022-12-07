@@ -20,3 +20,22 @@ li {
   margin: auto;
   text-align: left;
 }
+
+button {
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 10%;
+}
+
+#submit-button {
+  background-color: #04AA6D;
+}
+#reset-button {
+  background-color: #FF0000;
+}
+
+#myInput {
+  
+}
