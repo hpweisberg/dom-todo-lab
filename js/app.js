@@ -16,6 +16,12 @@ btn.addEventListener('click', function(evt){
   }
 })
 
-resetBtn.addEventListener('click', function(evt){
-  [...myTodoList.children].forEach(c => myTodoList.removeChild(c))
+resetBtn.addEventListener('click', function(){
+  [...myTodoList.children].forEach(c => myTodoList.remove(c))
+})
+
+
+myTodoList.addEventListener('click', function(evt){
+  evt.target.remove()
+  console.log(evt.target)
 })
