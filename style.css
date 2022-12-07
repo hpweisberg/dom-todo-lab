@@ -9,6 +9,10 @@ body {
   padding-bottom: 40vh;
 }
 
+/* h6 {
+  ; */
+/* } */
+
 ul {
   /* margin: 0; */
   display:inline-block;
@@ -19,6 +23,11 @@ li {
   /* width: 100px; */
   margin: auto;
   text-align: left;
+}
+
+li:hover{
+  text-decoration: line-through;
+  text-decoration-color: salmon;
 }
 
 button {
@@ -34,8 +43,4 @@ button {
 }
 #reset-button {
   background-color: #FF0000;
-}
-
-#myInput {
-  
 }

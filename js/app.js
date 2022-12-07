@@ -4,8 +4,7 @@ const btn = document.getElementById('submit-button')
 const myTodoList = document.getElementById('todo-list')
 const resetBtn = document.getElementById('reset-button')
 
-// Add To-do button:
-btn.addEventListener('click', function(evt){
+const addToList = (evt) => {
   const li = document.createElement('li')
   const inp = document.getElementById('myInput')
     if(myInput.value.trim()){
@@ -15,13 +14,18 @@ btn.addEventListener('click', function(evt){
     } else {
       alert('Please enter a To-do item')
   }
+}
+
+
+// Add To-do button:
+btn.addEventListener('click', function(evt){
+  addToList()
 })
 
 // Press Enter to click button
 inputBox.addEventListener('keypress', function(evt){
   if (evt.key === 'Enter'){
-    evt.preventDefault();
-    document.getElementById('btn').click();
+  addToList()
   }
 })
 
@@ -30,7 +34,7 @@ resetBtn.addEventListener('click', function(){
   [...myTodoList.children].forEach(c => c.remove())
 })
 
-// Add remove indivual line items
+// Add remove individual line items
 myTodoList.addEventListener('click', function(evt){
   evt.target.remove()
   console.log(evt.target)
