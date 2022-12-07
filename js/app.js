@@ -2,6 +2,7 @@ const inputBox = document.getElementById('myInput')
 const btn = document.getElementById('submit-button')
 const myTodoList = document.getElementById('todo-list')
 console.log(myInput)
+const resetBtn = document.getElementById('reset-button')
 
 btn.addEventListener('click', function(evt){
   const li = document.createElement('li')
@@ -13,4 +14,8 @@ btn.addEventListener('click', function(evt){
     } else {
       alert('Please enter a To-do item')
   }
+})
+
+resetBtn.addEventListener('click', function(evt){
+  [...myTodoList.children].forEach(c => myTodoList.removeChild(c))
 })
