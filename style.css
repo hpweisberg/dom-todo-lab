@@ -1,0 +1,16 @@
+body {
+  text-align: center;
+  margin: 0 auto;
+}
+
+ul {
+  /* margin: 0; */
+  display:inline-block;
+}
+
+
+li {
+  /* width: 100px; */
+  margin: auto;
+  text-align: left;
+}
