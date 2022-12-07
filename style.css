@@ -9,18 +9,12 @@ body {
   padding-bottom: 40vh;
 }
 
-/* h6 {
-  ; */
-/* } */
-
 ul {
-  /* margin: 0; */
   display:inline-block;
 }
 
 
 li {
-  /* width: 100px; */
   margin: auto;
   text-align: left;
 }
