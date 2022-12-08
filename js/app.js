@@ -12,7 +12,7 @@ const addToList = (evt) => {
       document.getElementById('todo-list').appendChild(li)
       inp.value = ''
     } else {
-      alert('Please enter a To-do item')
+      alert('Please Enter a To-do Item')
   }
 }
 
