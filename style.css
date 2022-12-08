@@ -38,3 +38,7 @@ button {
 #reset-button {
   background-color: #FF0000;
 }
+
+#myInput {
+  height: 32px;
+}
